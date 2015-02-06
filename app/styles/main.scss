@@ -131,10 +131,16 @@ body {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 6s;
     border: 1px solid white;
-    transition: 0.3s background-color ease;
+    transition: 0.3s all ease;
+    -webkit-box-shadow: 7px 7px 19px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 19px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 19px 0px rgba(50, 50, 50, 0.75);
   }
   a:hover{
     background-color: #6D9252;
+    -webkit-box-shadow: 7px 7px 12px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 12px 0px rgba(50, 50, 50, 0.75);
   }
   a.visible{
     opacity: .6;
@@ -156,7 +162,7 @@ box-shadow:         7px 7px 19px 0px rgba(50, 50, 50, 0.75);
   h2{
     font-size: 40px;
     font-weight: bold;
-
+    text-align: center;
     font-family: $oswald;
     padding: 20px;
     border: 1px solid gray;
