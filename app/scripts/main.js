@@ -10,10 +10,18 @@ $(document).ready(function() {
   $('.quote').on('webkitAnimationEnd', function(e) {
     $(this).addClass('visible');
   });
-});
 
-$(document).ready(function() {
   $('#logo img').on('webkitAnimationEnd', function(e) {
     $(this).addClass('visible');
   });
+
+  $('#enter a').on('webkitAnimationEnd', function(e) {
+    $(this).addClass('visible');
+  });
+
+});
+
+$('#enter a').on('click', function(e) {
+  $('#splash').fadeOut(400);
+  $('#main').fadeIn(400);
 });
